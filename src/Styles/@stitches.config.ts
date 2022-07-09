@@ -10,28 +10,7 @@ export const {
 }  = createStitches({
     theme:{
         colors:{
-            "primary":"rgba(0,105,110,1)",
-            "primary100":"rgba(0,105,110,0.1)",
-            "primary200":"rgba(0,105,110,0.2)",
-            "primary300":"rgba(0,105,110,0.3)",
-            "primary400":"rgba(0,105,110,0.4)",
-            "primary500":"rgba(0,105,110,0.5)",
-            "primary600":"rgba(0,105,110,0.6)", 
-            "primary700":"rgba(0,105,110,0.7)",
-            "primary800":"rgba(0,105,110,0.8)",
-            "primary900":"rgba(0,105,110,0.9)",
-            "onPrimary":"#FFFFFF",
-            "bg":"#FCFDF6",
-            "onBg":"#1A1C18",
-            "onBg100":"rgba(26,28,24,0.1)",
-            "onBg200":"rgba(26,28,24,0.2)",
-            "onBg300":"rgba(26,28,24,0.3)",
-            "onBg400":"rgba(26,28,24,0.4)",
-            "onBg500":"rgba(26,28,24,0.5)",
-            "onBg600":"rgba(26,28,24,0.6)",
-            "onBg700":"rgba(26,28,24,0.7)",
-            "onBg800":"rgba(26,28,24,0.8)",
-            "onBg900":"rgba(26,28,24,0.9)",
+
             
         },
         shadows:{
@@ -42,7 +21,8 @@ export const {
         },
         fonts:{
             "barlow":"barlow",
-            "cookie":"Cookie"
+            "cookie":"Cookie" , 
+            "playfair":"Playfair Display"
         },
 
         fontWeights:{
@@ -130,39 +110,46 @@ export const {
 
     },
     utils:{
-        "logo":(data:string[])=>({
-            fontFamily:"$cookie" ,
-            fontWeight:data[0],
-            fontSize:data[1],
-            lineHeight:"auto",
-            fontStyle:"normal"
-         }),
+
         "display1":(weight:string)=>({
-            fontFamily:"$barlow" ,
+            fontFamily:"$playfair" ,
             fontWeight:weight,
             fontSize:"$display1",
             lineHeight:"$display1",
             fontStyle:"normal"
          }),
 
+         "display1_i":(weight:string)=>({
+            display1:weight,
+            fontStyle:"italic"
+         }),
+
          "display2":(weight:string)=>({
-            fontFamily:"$barlow" ,
+            fontFamily:"$playfair" ,
             fontWeight:weight,
             fontSize:"$display2",
             lineHeight:"$display2",
             fontStyle:"normal"
          }),
+         "display2_i":(weight:string)=>({
+            display2:weight,
+            fontStyle:"italic"
+         }),
 
          "display3":(weight:string)=>({
-            fontFamily:"$barlow" ,
+            fontFamily:"$playfair" ,
             fontWeight:weight,
             fontSize:"$display3",
             lineHeight:"$display3",
             fontStyle:"normal"
          }),
+         "display3_i":(weight:string)=>({
+            display3:weight,
+            fontStyle:"italic"
+         }),
 
         "headline1":(weight:string)=>({
-            fontFamily:"$barlow" ,
+            fontFamily:"$playfair" ,
             fontWeight:weight,
             fontSize:"$headline1",
             lineHeight:"$headline1",
@@ -175,7 +162,7 @@ export const {
         }),
 
         "headline2":(weight:string)=>({
-            fontFamily:"$barlow" ,
+            fontFamily:"$playfair" ,
             fontWeight:weight,
             fontSize:"$headline2",
             lineHeight:"$headline2",
@@ -188,7 +175,7 @@ export const {
         }),
 
         "headline3":(weight:string)=>({
-            fontFamily:"$barlow" ,
+            fontFamily:"$playfair" ,
             fontWeight:weight,
             fontSize:"$headline3",
             lineHeight:"$headline3",
@@ -201,7 +188,7 @@ export const {
         }),
 
         "headline4":(weight:string)=>({
-            fontFamily:"$barlow" ,
+            fontFamily:"$playfair" ,
             fontWeight:weight,
             fontSize:"$headline4",
             lineHeight:"$headline4",
@@ -215,7 +202,7 @@ export const {
 
 
          "headline5":(weight:string)=>({
-            fontFamily:"$barlow" ,
+            fontFamily:"$playfair" ,
             fontWeight:weight,
             fontSize:"$headline5",
             lineHeight:"$headline5",
@@ -228,7 +215,7 @@ export const {
         }),
 
         "headline6":(weight:string)=>({
-            fontFamily:"$barlow" ,
+            fontFamily:"$playfair" ,
             fontWeight:weight,
             fontSize:"$headline6",
             lineHeight:"$headline6",
@@ -242,16 +229,20 @@ export const {
 
 
         "subhead1":(weight:string)=>({
-            fontFamily:"$barlow" ,
+            fontFamily:"$playfair" ,
             fontWeight:weight,
             fontSize:"$subhead1",
             lineHeight:"$subhead1",
             fontStyle:"normal",
             letterSpacing:"$1"
          }),
+         "subhead1_i":(weight:string)=>({
+            subhead1:weight,
+            fontStyle:"italic"
+        }),
 
         "subhead2":(weight:string)=>({
-            fontFamily:"$barlow" ,
+            fontFamily:"$playfair" ,
             fontWeight:weight,
             fontSize:"$subhead2",
             lineHeight:"$subhead2",
@@ -264,7 +255,7 @@ export const {
         }),
 
         "subhead3":(weight:string)=>({
-            fontFamily:"$barlow" ,
+            fontFamily:"$playfair" ,
             fontWeight:weight,
             fontSize:"$subhead3",
             lineHeight:"$subhead3",
@@ -278,7 +269,7 @@ export const {
         }),
 
         "button":(weight:string)=>({
-            fontFamily:"$barlow" ,
+            fontFamily:"$playfair" ,
             fontWeight:weight,
             fontSize:"$button",
             lineHeight:"$button",
@@ -344,6 +335,11 @@ export const {
         }),
         opac:(value:string)=>({
             opacity:value
+        }),
+        bgImg:()=>({
+            backgroundOrigin:"content-box",
+            backgroundPosition:"center",
+            backgroundSize:"cover",
         })
 
     }
