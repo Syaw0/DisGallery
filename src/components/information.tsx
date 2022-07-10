@@ -3,7 +3,7 @@ import Ico_arrowLeft from "../asesst/Icons/Ico_arrowLeft";
 import Ico_arrowRight from "../asesst/Icons/Ico_arrowRight";
 import data from "../Data";
 import { useStore } from "../store/store";
-import { deHeight, inHeight } from "../Styles/keyframes";
+import { deHeight, fadeinBottom, inHeight } from "../Styles/keyframes";
 import Flex from "../Styles/styledComponent/Flex";
 import Text from "../Styles/styledComponent/Text";
 
@@ -59,7 +59,7 @@ function Information(){
             padding:"0 $10",
             position:"absolute",
             bottom:"0",
-            
+            animation:`${fadeinBottom} 1s 1s both ease`,
             "@bp1":{
                 padding:"0 $4",
             },
@@ -136,13 +136,15 @@ function Information(){
                         },
                         borderBottom:"1px solid rgba(0,0,0,0.1)"
                         }}>
-                        Tap to Detail
+                        {isOpen ? "Tap to Close":"Tap to Detail"}
                     </Text>
 
 
-                    <Flex id="info_con" css={{
+                    <Flex justify={"start"} align="start" id="info_con" css={{
                         padding:"$3",
                         overflowY:"auto",
+                        height:"auto",
+                        
                         "& >div":{
                             width:"50%",
                             padding:"$1",
@@ -152,7 +154,9 @@ function Information(){
                             flex_c:"",
                             "& >div":{
                                 width:"100%",
-                                padding:"$1",
+                                padding:"$1 $1",
+                                height:"100%",
+                                
                                 
                             },  
                         },
@@ -165,9 +169,14 @@ function Information(){
 
                             <Text css={{
                                 display1_i:"900",
-                                paddingBottom:"$3",
-                                "@bp4":{
+                                marginTop:"$1",
+                                marginBottom:"$3",
+                                "@bp1-1":{
                                     display2_i:"900"
+                                },
+                                "@bp4":{
+                                    display3_i:"900",
+                                    marginTop:"$2",
                                 }
                                 }}>
                                 {data[currentArt]["name"]}
@@ -184,7 +193,8 @@ function Information(){
                         </Flex>
 
                         <Flex dir={"column"} justify="center" align={"center"} css={{
-                            
+
+                            height:"100%",
                             "&>div":{
                                 
                                 width:"100%"
@@ -192,11 +202,15 @@ function Information(){
                             }
                             }}>
 
-                                <Flex css={{
+                                <Flex  css={{
 
                                     "& img":{
                                         width:"100%",
-                                        height:"auto"
+                                        height:"auto",
+                                        borderRadius:"16px"
+                                    },
+                                    "@bp4":{
+                                        marginTop:"$7",
                                     }
 
                                 }}>
@@ -204,7 +218,7 @@ function Information(){
                                 </Flex>
 
                                 <Flex justify={"start"} align="start" css={{
-                                    paddingTop:"$2",
+                                    marginTop:"$2",
                                     "& div":{
                                         width:"fit-content",
                                     }

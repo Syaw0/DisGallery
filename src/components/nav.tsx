@@ -1,7 +1,7 @@
 import React from "react";
 import Ico_Logo from "../asesst/Icons/Ico_logo";
 import Ico_menu from "../asesst/Icons/Ico_menu";
-import Ico_menu2 from "../asesst/Icons/Ico_menu2";
+import { fadeinTop } from "../Styles/keyframes";
 import Flex from "../Styles/styledComponent/Flex";
 import Text from "../Styles/styledComponent/Text";
 
@@ -10,7 +10,7 @@ function Nav(){
         <Flex justify={"between"} css={{
             width:"100%",
             
-
+            animation:`${fadeinTop} 1s 1s both ease`
             }}>
 
             <Text cursor={"click"} css={{

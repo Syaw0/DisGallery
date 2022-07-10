@@ -5,6 +5,7 @@ import data from "./Data"
 import {useStore} from "./store/store"
 import Nav from "./components/nav"
 import Information from './components/information';
+import { fadeinScale } from './Styles/keyframes';
 
 
 window.addEventListener("resize" , ()=>{
@@ -45,7 +46,8 @@ function App() {
               position:"fixed",
               zIndex:"0",
               top:"0",
-              left:"0"
+              left:"0",
+              animation:`${fadeinScale} 2s 0s both ease`
       }}>
 
       </Flex>

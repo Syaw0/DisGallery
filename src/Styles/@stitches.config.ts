@@ -102,6 +102,7 @@ export const {
         "bp0-1":"(max-width:1200px)",
         "bp0-2":"(max-width:1100px)",
         "bp1":"(max-width:1000px)",
+        "bp1-1":"(max-width:900px)",
         "bp2":"(max-width:800px)",
         
         "bp3":"(max-width:720px)",

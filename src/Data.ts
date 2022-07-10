@@ -29,7 +29,7 @@ const data:{[index:string]:any} = {
         die:"1510",
         artImg:"https://user-images.githubusercontent.com/78824988/178115417-b7268114-5a9b-41b7-9e7c-51cbd4a3492d.jpg",
         artistImg:"https://user-images.githubusercontent.com/78824988/178115393-6f44a382-e2ab-4250-8d3e-f621d09614be.jpg",
-        des:"Botticelli's The Birth of Venus was the first full-length, non-religious nude since antiquity, and was made for Lorenzo de Medici. It's claimed that the figure of the Goddess of Love is modeled after one Simonetta Cattaneo Vespucci, whose favors were allegedly shared by Lorenzo and his younger brother, Giuliano. Venus is seen being blown ashore on a giant clamshell by the wind gods Zephyrus and Aura as the personification of spring awaits on land with a cloak. Unsurprisingly, Venus attracted the ire of Savonarola, the Dominican monk who led a fundamentalist crackdown on the secular tastes of the Florentines. His campaign included the infamous “Bonfire of the Vanities” of 1497, in which “profane” objects—cosmetics, artworks, books—were burned on a pyre. The Birth of Venus was itself scheduled for incineration, but somehow escaped destruction. Botticelli, though, was so freaked out by the incident that he gave up painting for a while.",
+        des:"Botticelli's The Birth of Venus was the first full-length, non-religious nude since antiquity, and was made for Lorenzo de Medici. It's claimed that the figure of the Goddess of Love is modeled after one Simonetta Cattaneo Vespucci, whose favors were allegedly shared by Lorenzo and his younger brother, Giuliano. Venus is seen being blown ashore on a giant clamshell by the wind gods Zephyrus and Aura as the personification of spring awaits on land with a cloak. Unsurprisingly, Venus attracted the ire of Savonarola, the Dominican monk who led a fundamentalist crackdown on the secular tastes of the Florentines.",
         id:"3"
 
     } ,
@@ -53,7 +53,7 @@ const data:{[index:string]:any} = {
         die:"1516",
         artImg:"https://user-images.githubusercontent.com/78824988/178115603-7295f480-8cfa-4979-ba00-759dc017e301.jpg",
         artistImg:"https://user-images.githubusercontent.com/78824988/178115569-5ae40ee3-7187-4cb7-b2c4-689950d3d8b2.jpg",
-        des:"This fantastical triptych is generally considered a distant forerunner to Surrealism. In truth, it's the expression of a late medieval artist who believed that God and the Devil, Heaven and Hell were real. Of the three scenes depicted, the left panel shows Christ presenting Eve to Adam, while the right one features the depredations of Hell; less clear is whether the center panel depicts Heaven. In Bosch's perfervid vision of Hell, an enormous set of ears wielding a phallic knife attacks the damned, while a bird-beaked bug king with a chamber pot for a crown sits on its throne, devouring the doomed before promptly defecating them out again. This riot of symbolism has been largely impervious to interpretation, which may account for its widespread appeal.",
+        des:" In Bosch's perfervid vision of Hell, an enormous set of ears wielding a phallic knife attacks the damned, while a bird-beaked bug king with a chamber pot for a crown sits on its throne, devouring the doomed before promptly defecating them out again. This riot of symbolism has been largely impervious to interpretation, which may account for its widespread appeal.",
 
         id:"5"
 

@@ -14,7 +14,6 @@ const useStore = create<Store>()((set,get)=>({
     setArt:(value:string)=>{
 
         document.getElementById("bg")!.style.animation = `${easefadeout} 1s 0s both ease`
-        // document.getElementById("bg2")!.style.animation = `${easefadein} 0.5s 1s both ease`
         setTimeout(()=>{
             set(state=>{return{...state,currentArt:value}})
             document.getElementById("bg")!.style.animation = `${easefadein} 0.5s 0s both ease`

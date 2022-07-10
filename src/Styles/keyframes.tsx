@@ -12,6 +12,20 @@ const fadein = keyframes({
 })
 
 
+const fadeinScale = keyframes({
+    "0%":{
+        opac:"0",
+        transform:"scale(1.1)"
+
+    },
+    "100%":{
+        opac:"1",
+        transform:"scale(1)"
+
+    }
+})
+
+
 const easefadein = keyframes({
     "0%":{
         opac:"0",
@@ -46,7 +60,7 @@ const inHeight = keyframes({
 
     },
     "100%":{
-        height:"40rem",
+        height:`${window.innerHeight - 50 }px`,
 
     }
 })
@@ -89,4 +103,18 @@ const fadeinTop = keyframes({
     }
 })
 
-export {fadein , fadeinTop , fadeout , inHeight , deHeight , easefadeout , easefadein}
+
+const fadeinBottom = keyframes({
+    "0%":{
+        opacity:"0",
+        transform:"translateY(+100px)",
+    },
+    "100%":{
+        opacity:"1",
+        transform:"translateY(0px)",
+    }
+})
+
+
+
+export {fadein , fadeinTop , fadeout , inHeight , deHeight , easefadeout , easefadein , fadeinBottom , fadeinScale}
